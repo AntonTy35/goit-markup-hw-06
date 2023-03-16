@@ -73,12 +73,13 @@ body {
 .link {
   text-decoration: none;
 
-  position: relative;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ------------------   Studio   ----------------- */
 /* Header */
+
 .header {
   border-bottom: 1px solid var(--secondary-white-color);
   padding: var(--padding-header) 0;
@@ -125,6 +126,7 @@ body {
   line-height: 1.5;
   padding: 24px 0;
 
+  position: relative;
   transition-property: color;
 }
 
@@ -172,7 +174,6 @@ body {
   left: 0px;
   bottom: -4px;
 }
-
 /* /Header */
 
 .section {
@@ -448,8 +449,10 @@ body {
 }
 
 /* /Section 4 Customers */
+/* ------------------   /Studio   ----------------- */
 
-/* Footer */
+/* ------------------   Footer   ----------------- */
+
 .footer {
   background-color: var(--title-text-color);
   padding: 100px 0;
@@ -520,10 +523,9 @@ body {
 
 .footer-social-icon {
 }
+/* -------------------   /Footer   --------------------*/
 
-/* /Footer */
-
-/* --------------------------------Portfolio---------------*/
+/* --------------------   Portfolio   -----------------*/
 
 /* Content */
 .content {
@@ -584,14 +586,12 @@ body {
 .project-card-link {
   display: block;
   background: var(--primary-white-color);
-  border: 1px solid transparent;
 
-  transition-property: border, box-shadow;
+  transition-property: box-shadow;
 }
 
-.project-card-link:is(:hover, :focus) {
-  cursor: pointer;
-  border: 1px solid var(--grey-bg-color);
+.project-card-link:hover,
+.project-card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -621,7 +621,7 @@ body {
   overflow: auto;
 }
 
-.project-card:hover .project-card-text-overlay {
+.project-card-link:is(:hover, :focus) .project-card-text-overlay {
   transform: translateY(0);
 }
 
@@ -646,8 +646,9 @@ body {
   margin-top: var(--margin-p-top);
 }
 /* /Content */
+/*  ----------------  /Portfolio  ------------------- */
 
-/*  ------------------ Modal  ------------------- */
+/*  ------------------   Modal  ------------------- */
 
 .backdrop {
   width: 100%;
@@ -656,6 +657,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
