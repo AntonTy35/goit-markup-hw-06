@@ -48,8 +48,7 @@ img {
   height: auto;
 }
 
-.section {
-}
+.section {}
 
 .container {
   max-width: calc(1128px + 15px + 15px);
@@ -57,8 +56,7 @@ img {
   margin: 0 auto;
 }
 
-.list-container {
-}
+.list-container {}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -66,6 +64,7 @@ body {
   background-color: var(--primary-white-color);
   margin: 0;
 }
+
 .list {
   list-style: none;
 }
@@ -153,11 +152,9 @@ body {
   color: var(--primary-text-color);
 }
 
-.contact-mail {
-}
+.contact-mail {}
 
-.contact-phone {
-}
+.contact-phone {}
 
 .current {
   color: var(--accent-color);
@@ -174,6 +171,7 @@ body {
   left: 0px;
   bottom: -4px;
 }
+
 /* /Header */
 
 .section {
@@ -185,10 +183,8 @@ body {
 .hero {
   padding: 188px 0;
 
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/heroImage.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -233,6 +229,7 @@ body {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
+
 /* /Hero */
 
 .visually-hidden {
@@ -287,6 +284,7 @@ body {
 
   margin-top: var(--margin-p-top);
 }
+
 /* /Section 1 Description */
 
 /* Section 2 What are we doing */
@@ -310,6 +308,7 @@ body {
 .we-doing-item {
   width: calc((100% - (2 * 24px)) / 3);
 }
+
 /* /Section 2 What are we doing */
 
 /* Section 3 Our Team */
@@ -445,8 +444,7 @@ body {
   fill: var(--accent-color);
 }
 
-.customers-icon {
-}
+.customers-icon {}
 
 /* /Section 4 Customers */
 /* ------------------   /Studio   ----------------- */
@@ -524,8 +522,7 @@ body {
   background-color: #31d0aa;
 }
 
-.footer-social-icon {
-}
+.footer-social-icon {}
 
 .footer-subscribe {
   margin-left: 80px;
@@ -559,7 +556,7 @@ body {
   padding: 8px 16px;
 }
 
-.send-btn {
+.subscribe-btn {
   font-family: inherit;
   color: var(--primary-white-color);
   font-weight: 500;
@@ -582,8 +579,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.send-btn:hover,
-.send-btn:focus {
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -718,6 +715,7 @@ body {
   color: var(--primary-text-color);
   margin-top: var(--margin-p-top);
 }
+
 /* /Content */
 /*  ----------------  /Portfolio  ------------------- */
 
@@ -738,7 +736,7 @@ body {
 
 .modal {
   width: 408px;
-  height: 576px;
+  height: 586px;
   padding: 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -789,7 +787,124 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
 .backdrop.is-hidden {
   transform: translate(-50%, -50%) scale(0);
 }
+
+
+
+
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  /* margin-bottom: 16px; */
+}
+
+.modal-form {}
+
+.form {}
+
+.modal-input-group {
+  margin-top: 8px;
+}
+
+.modal-input-group:nth-child(1) {
+  margin-top: 16px;
+}
+
+.modal-form-label>span {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+}
+
+.modal-form-control {
+  position: relative;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  /* border: 1px solid var(--title-btn-color); */
+  /* border-radius: 4px; */
+
+}
+
+.form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-form-textarea {
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+
+  resize: none;
+  width: 100%;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.checkbox {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+  margin-top: 16px;
+}
+
+.modal-send-btn {
+  padding: 16px 32px;
+  margin-top: 24px;
+  width: 169px;
+  height: 56px;
+  background-color: var(--title-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-send-btn:is(:hover, :focus) {
+  /* color: var(--primary-white-color); */
+  background-color: var(--accent-color);
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
+
+
+
+
 /* -------------- /Modal --------------- */
