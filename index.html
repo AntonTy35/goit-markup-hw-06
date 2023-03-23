@@ -435,18 +435,19 @@
         </ul>
       </div>
 
-      <div class="footer-subscribe">
+      <form class="footer-subscribe form">
+        <p class="footer-subscribe-title">Subscribe</p>
         <label class="footer-label">
-          <span>Subscribe</span>
-          <div class="footer-form-control">
-            <input type="email" class="footer-form-input form-input" placeholder="E-mail" name="email">
+          <span class="footer-label-wrap">
+            <input type="email" class="footer-form-input form-input" placeholder="E-mail" name="email"
+              aria-label="subscribe">
             <button type="submit" class="subscribe-btn">Subscribe</button>
             <svg class="footer-subscribe-icon" width="24" height="20">
               <use href="./images/icons.svg#i-icon-send"></use>
             </svg>
-          </div>
+          </span>
         </label>
-      </div>
+      </form>
 
     </div>
   </footer>
@@ -462,52 +463,40 @@
       <h3 class="modal-title">Leave your contacts and we will call you back</h3>
 
       <form class="modal-form form">
+        <label class="modal-form-label">
+          <span>Name</span>
+          <span class="form-icon-position">
+            <input type="text" class="modal-form-input" placeholder=" " name="fullname" required maxlength="20">
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/icons.svg#i-person"></use>
+            </svg>
+          </span>
+        </label>
 
-        <div class="modal-input-group">
-          <label class="modal-form-label">
-            <span>Name</span>
-            <div class="modal-form-control">
-              <input type="text" class="modal-form-input" placeholder="" name="fullname" required maxlength="20">
-              <svg class="form-icon" width="12" height="12">
-                <use href="./images/icons.svg#i-person"></use>
-              </svg>
-            </div>
-          </label>
-        </div>
+        <label class="modal-form-label">
+          <span>Phone</span>
+          <span class="form-icon-position">
+            <input type="tel" class="modal-form-input" placeholder=" " name="phone" required maxlength="20">
+            <svg class="form-icon" width="13" height="13">
+              <use href="./images/icons.svg#i-phone"></use>
+            </svg>
+          </span>
+        </label>
 
-        <div class="modal-input-group">
-          <label class="modal-form-label">
-            <span>Phone</span>
-            <div class="modal-form-control">
-              <input type="tel" class="modal-form-input" placeholder="" name="phone" required maxlength="20">
-              <svg class="form-icon" width="13" height="13">
-                <use href="./images/icons.svg#i-phone"></use>
-              </svg>
-            </div>
-          </label>
-        </div>
+        <label class="modal-form-label">
+          <span>Email</span>
+          <span class="form-icon-position">
+            <input type="email" class="modal-form-input" placeholder=" " name="email" required maxlength="20">
+            <svg class="form-icon" width="15" height="12">
+              <use href="./images/icons.svg#i-email"></use>
+            </svg>
+          </span>
+        </label>
 
-        <div class="modal-input-group">
-          <label class="modal-form-label">
-            <span>Email</span>
-            <div class="modal-form-control">
-              <input type="email" class="modal-form-input" placeholder="" name="email" required maxlength="20">
-              <svg class="form-icon" width="15" height="12">
-                <use href="./images/icons.svg#i-email"></use>
-              </svg>
-            </div>
-          </label>
-        </div>
-
-        <div class="modal-input-group">
-          <label class="modal-form-label">
-            <span>Comment</span>
-            <div class="modal-form-control">
-              <textarea name="comment" class="modal-form-textarea" placeholder="Text input"></textarea>
-            </div>
-          </label>
-        </div>
-
+        <label class="modal-form-label">
+          <span>Comment</span>
+          <textarea name="comment" class="modal-form-textarea" placeholder="Text input"></textarea>
+        </label>
 
         <div class="modal-input-group-checkbox">
           <input type="checkbox" class="input-checkbox visually-hidden" id="policy" name="policy">
@@ -524,13 +513,9 @@
         </div>
 
         <button type="submit" class="modal-send-btn btn">Send</button>
+
       </form>
-
-
-
     </div>
-
-
 
   </div>
 

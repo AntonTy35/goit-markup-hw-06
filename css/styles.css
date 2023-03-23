@@ -458,7 +458,6 @@ body {
 
 .footer-container {
   display: flex;
-  /* column-gap: var(--padding-top-bottom-section); */
   margin: 0 auto;
 }
 
@@ -482,6 +481,7 @@ body {
   display: block;
 }
 
+/* footer-social-media */
 .footer-social-media {
   margin-left: 120px;
   max-width: 208px;
@@ -524,12 +524,13 @@ body {
 
 .footer-social-icon {}
 
+/* Footer Subscribe */
 .footer-subscribe {
   margin-left: 80px;
   max-width: 453px;
 }
 
-.footer-label {
+.footer-subscribe-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -537,7 +538,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-form-control {
+.footer-label-wrap {
   margin-top: 16px;
   display: flex;
   position: relative;
@@ -545,15 +546,24 @@ body {
 
 .footer-form-input {
   min-width: 264px;
-  max-height: 40px;
+  height: 40px;
+  padding: 8px 16px;
   background-color: transparent;
   border: 1px solid var(--primary-white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
 }
 
 .footer-form-input::placeholder {
-  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
 }
 
 .subscribe-btn {
@@ -619,7 +629,6 @@ body {
   letter-spacing: 0.04em;
   color: var(--title-btn-color);
   background-color: var(--grey-bg-color);
-  /* cursor: pointer; */
 
   display: block;
   border: 1px solid var(--secondary-white-color);
@@ -767,8 +776,6 @@ body {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  margin-bottom: 24px;
 }
 
 .btn-modal-close:is(:hover, :focus) {
@@ -792,10 +799,6 @@ body {
   transform: translate(-50%, -50%) scale(0);
 }
 
-
-
-
-
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -803,38 +806,37 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  /* margin-bottom: 16px; */
+  margin-top: 24px;
 }
 
 .modal-form {
-  /* position: relative; */
+  margin-top: 16px;
 }
 
 .form {}
 
-.modal-input-group {
-  margin-top: 8px;
+/* modal input  */
+.modal-form-label {
+  position: relative;
 }
 
-.modal-input-group:nth-child(1) {
-  margin-top: 16px;
-}
-
-.modal-form-label>span {
+.modal-form-label {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #8E8F99;
+
+  display: block;
+  margin-top: 8px;
 }
 
-.modal-form-control {
-  position: relative;
+.modal-form-label:nth-child(1) {
+  margin-top: 0;
 }
 
 .modal-form-input {
   width: 100%;
   height: 40px;
-  margin-top: 4px;
   padding-left: 38px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -852,13 +854,19 @@ body {
   border: 1px solid var(--title-btn-color);
 }
 
-.form-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
+.form-icon-position {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
+
+.modal-form-label .form-icon {
   width: 18px;
   height: 24px;
 
+  position: absolute;
+  left: 16px;
+  top: 50%;
   transform: translateY(-50%);
 
   transition-property: fill;
@@ -870,6 +878,11 @@ body {
   fill: var(--title-btn-color);
 }
 
+.modal-form-input:focus-within:not(:placeholder-shown) {
+  color: var(--title-text-color);
+}
+
+/* modal-textarea */
 .modal-form-textarea {
   resize: none;
   width: 100%;
@@ -879,6 +892,11 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--title-text-color);
 
   transition-property: border;
   transition-duration: 250ms;
@@ -908,12 +926,13 @@ body {
 /* Modal checkbox */
 .modal-input-group-checkbox {
   display: flex;
+  margin-top: 16px;
 }
 
 .label-checkbox {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -923,6 +942,7 @@ body {
 .checkbox-icon {
   width: 16px;
   height: 16px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -981,8 +1001,5 @@ body {
   cursor: pointer;
   background-color: var(--accent-color);
 }
-
-
-
 
 /* -------------- /Modal --------------- */
