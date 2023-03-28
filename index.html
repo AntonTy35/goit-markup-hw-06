@@ -22,23 +22,23 @@
     <div class="container header-container">
       <nav class="header-nav">
 
-        <div class="mobile-nav">
+        <!-- <div class="mobile-nav"> -->
 
-          <button type="button" class="menu-btn btn" data-menu-button>
-            <span class="menu-btn-thumb">
-              <svg class="menu-btn-icon" width="32" height="22" aria-label="Button mobile menu">
-                <use class="i-menu" href="./images/icons.svg#i-menu"></use>
-                <use class="i-close-button" href="./images/icons.svg#i-close-button"></use>
-              </svg>
-            </span>
-          </button>
-
-          <span class="logo-thumb">
-            <a href="./index.html" class="logo link">Web<span class="header-logo-black">Studio</span>
-            </a>
+        <button type="button" class="menu-btn btn" data-menu-button>
+          <span class="menu-btn-thumb">
+            <svg class="menu-btn-icon" width="32" height="22" aria-label="Button mobile menu">
+              <use class="i-menu" href="./images/icons.svg#i-menu"></use>
+              <use class="i-close-button" href="./images/icons.svg#i-close-button"></use>
+            </svg>
           </span>
+        </button>
 
-        </div>
+        <span class="logo-thumb">
+          <a href="./index.html" class="logo link">Web<span class="header-logo-black">Studio</span>
+          </a>
+        </span>
+
+        <!-- </div> -->
 
         <div class="menu-container" id="menu-container" data-menu>
           <div class="navigation">
@@ -147,7 +147,7 @@
     <!--/ Section 1 Description-->
 
     <!-- Section 2 What are we doing-->
-    <section class="section">
+    <section class="section section-we-doing">
       <div class="container">
         <h2 class="we-doing">What are we doing</h2>
 
@@ -169,7 +169,7 @@
     <!--/ Section 2 What are we doing-->
 
     <!-- Section 3 Our Team-->
-    <section class="section our-team">
+    <section class="section section-our-team">
       <div class="container">
         <h2 class="team">Our Team</h2>
 
@@ -412,8 +412,10 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-logo">
-        <a href="./index.html" class="logo link">Web<span class="footer-logo-white">Studio</span>
-        </a>
+        <div class="footer-logo-thumb">
+          <a href="./index.html" class="logo link">Web<span class="footer-logo-white">Studio</span>
+          </a>
+        </div>
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
@@ -463,10 +465,11 @@
         <span class="footer-label-wrap">
           <input type="email" id="subscribe" class="footer-form-input form-input" placeholder="E-mail" name="email"
             aria-label="email">
-          <button type="submit" class="subscribe-btn">Subscribe</button>
-          <svg class="footer-subscribe-icon" width="24" height="20">
-            <use href="./images/icons.svg#i-icon-send"></use>
-          </svg>
+          <button type="submit" class="subscribe-btn">Subscribe
+            <svg class="footer-subscribe-icon" width="24" height="20">
+              <use href="./images/icons.svg#i-icon-send"></use>
+            </svg>
+          </button>
         </span>
       </form>
 
